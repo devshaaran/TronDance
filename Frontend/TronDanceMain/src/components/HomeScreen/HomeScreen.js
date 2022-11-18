@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 // import bgVideo from '../../assets/TronDanceCRX.mp4'
-import gangnam from '../../assets/samplevid.mp4'
-import rasputin from '../../assets/samplevid1.mp4'
+// import gangnam from '../../assets/samplevid.mp4'
+// import rasputin from '../../assets/samplevid1.mp4'
 import tDanceLogo from '../../assets/trondance.png'
 import volumeMute from '../../assets/volume-mute.png'
 import volumeUnmute from '../../assets/volume.png'
@@ -17,19 +17,10 @@ import 'react-toastify/dist/ReactToastify.css';
 import BASE_URL from '../../endpoints';
 import axios from 'axios';
 import { joinBattle, startBattle, viewBattle } from '../../utils/endpoints';
-
-import {drawKeyPoints, drawSkeleton} from '../utils'
-import * as posenet from '@tensorflow-models/posenet'
-import comparer from '../../oppa.json'
-import {getScore1} from '../../utils/compare'
-import { poseSimilarity } from 'posenet-similarity';
 import { Redirect } from 'react-router-dom'
 
 
 let bgVideo = "https://res.cloudinary.com/dstpyrlva/video/upload/v1668716090/TronDanceCRX_fqm2ql.mp4"
-
-
-let videoChooser = {"Gangnam-Style": gangnam}
 
 
 class HomeScreen extends Component {

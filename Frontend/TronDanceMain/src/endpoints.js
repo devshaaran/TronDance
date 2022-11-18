@@ -1,2 +1,2 @@
-let BASE_URL = "http://127.0.0.1:8000/"
+let BASE_URL = "https://trondance.herokuapp.com/"
 export default BASE_URL
