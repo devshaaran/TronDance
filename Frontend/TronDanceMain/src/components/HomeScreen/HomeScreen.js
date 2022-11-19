@@ -157,11 +157,25 @@ class HomeScreen extends Component {
     }
 
     async getUserBalance(){
-        let instance = await window.tronWeb.contract().at("TTG6tyv5ACmF4gKdARDSTzj3kkuvnVHH4H");
-        let currentValue = await instance.retrieveDancerBalance(this.state.tronAddress).call();
-        console.log(Number(currentValue._hex))
-        let balance = Number(currentValue._hex) > 0 ? parseInt((Number(currentValue._hex) / 1000000).toFixed(2)) : Number(currentValue._hex)
-        this.setState({userBalance: balance})
+        try {
+            let instance = await window.tronWeb.contract().at("TTG6tyv5ACmF4gKdARDSTzj3kkuvnVHH4H");
+            let currentValue = await instance.retrieveDancerBalance(this.state.tronAddress).call();
+            console.log(Number(currentValue._hex))
+            let balance = Number(currentValue._hex) > 0 ? parseInt((Number(currentValue._hex) / 1000000).toFixed(2)) : Number(currentValue._hex)
+            this.setState({userBalance: balance})
+        } catch (error) {
+            toast.error("Please change network to Nile Testnet", {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                });
+        }
+        
     }
 
     async notifyCheck(){
