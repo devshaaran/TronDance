@@ -1,12 +1,18 @@
 [![IMAGE ALT TEXT HERE](https://i.ibb.co/p2K24Xb/tron-Dance-Bg.png)](https://youtu.be/HENY8ek9ksw)
 
 
-**Project Goal**: Onboard the millions of dancers into web3
+**Project Goal**: Onboard the millions of dancers into web3 🕺🏻
+
 **Project Track**: Gamefi
+
 **Team Name**: TronDance
+
 **Team Member(s)**: @zkman @ritumbhara
+
 **DevPost URL**: [TronDance | Devpost ](https://devpost.com/software/trondance)
+
 **Project Website**: [https://trondance.netlify.app/ ](https://trondance.netlify.app/)
+
 **Project Test Instructions**: https://github.com/devshaaran/TronDance
 
 ![WithoutHeaders|690x389](https://global.discourse-cdn.com/business4/uploads/trondao/optimized/2X/c/c9604f91263fe036dd690ad794413b1b35fecfa3_2_1380x778.jpeg)
