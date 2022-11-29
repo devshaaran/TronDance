@@ -203,6 +203,16 @@ class HomeScreen extends Component {
 
     render(){
 
+        if(window.innerWidth <= 800){
+            return(
+                <div style={{width: "100vw", height: "100vh", backgroundColor: "#000", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column"}}>
+                    <img src={tDanceLogo} style={{position: "absolute", height: "5vh", top: "5vh", left: "5vw", zIndex: 100}}/>
+                    <Lottie style={{height: "30vh"}} animationData={danceAnimation} />
+                    <p style={{color: "#FFF", fontFamily: "poppins", fontSize: "large", width: "90vw", alignSelf: "center", textAlign: "center", margin: 0, marginTop: "20px"}}>Mobile phones are incompatible with Tron Dance, please use a Desktop to continue</p>
+                </div>
+            )
+        }
+
         let addFunds = async () => {
             let instance = await window.tronWeb.contract().at("TTG6tyv5ACmF4gKdARDSTzj3kkuvnVHH4H");
             let currentValue = await instance.enter().send({
